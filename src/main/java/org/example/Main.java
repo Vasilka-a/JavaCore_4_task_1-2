@@ -84,7 +84,7 @@ public class Main {
         return gson.toJson(list, listType);
     }
 
-    public static void writeString(String json, String fileName) {
+    private static void writeString(String json, String fileName) {
         try (FileWriter file = new FileWriter(fileName)) {
             file.write(json);
             file.flush();
